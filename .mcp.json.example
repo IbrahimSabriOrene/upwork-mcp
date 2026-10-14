@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "upwork": {
+      "command": "node",
+      "args": ["/absolute/path/to/upwork-mcp/dist/index.js"],
+      "env": {
+        "UPWORK_MCP_HEADLESS": "false",
+        "UPWORK_MCP_DEFAULT_INTERVAL": "15",
+        "UPWORK_MCP_MIN_INTERVAL": "5",
+        "UPWORK_MCP_TZ": "America/New_York",
+        "UPWORK_MCP_LOCALE": "en-US"
+      }
+    }
+  }
+}

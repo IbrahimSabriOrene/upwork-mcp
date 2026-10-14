@@ -1,0 +1,37 @@
+{
+  "name": "upwork-mcp",
+  "version": "0.1.0",
+  "description": "Event-based MCP server for Upwork job search via stealth Playwright (read + draft only).",
+  "type": "module",
+  "bin": {
+    "upwork-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -w -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsc -p tsconfig.json && node dist/index.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "postinstall": "playwright install chromium || true"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "better-sqlite3": "^11.9.1",
+    "node-cron": "^3.0.3",
+    "node-notifier": "^10.0.1",
+    "rebrowser-playwright": "^1.52.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.13.0",
+    "@types/node-cron": "^3.0.11",
+    "@types/node-notifier": "^8.0.5",
+    "playwright": "1.52.0",
+    "typescript": "^5.7.3"
+  }
+}
